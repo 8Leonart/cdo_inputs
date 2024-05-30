@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "RDR Lino";
+    src: url("//db.onlinewebfonts.com/t/ab21a97b9cae2e116d8d1473baefc9f0.eot");
+}
+
+body {
+    background-color: #2c2c2c;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-dark {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.login-dark .btn-close {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.login-dark .form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: "RDR Lino";
+    text-align: center;
+}
+
+.login-dark .form-control {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    font-family: "RDR Lino";
+    font-size: 18px;
+    resize: none;
+    overflow: hidden;
+    width: 100%;
+}
+
+.login-dark .btn-primary {
+    background-color: #fff;
+    border: none;
+    width: 100%;
+    font-family: "RDR Lino";
+    color: #000;
+    margin-top: 20px;
+}
+
+.login-dark .btn-primary:focus,
+.login-dark .btn-secondary:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@media (max-width: 600px) {
+    .login-dark {
+        width: 90%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    .login-dark {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .login-dark {
+        width: 50%;
+    }
+}
+
+/* Your CSS styles here */
+.number-input {
+    display: flex;
+    align-items: center;
+}
+.number-input input {
+    -moz-appearance: textfield;
+    text-align: center;
+}
+.number-input button {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    width: 30px;
+    cursor: pointer;
+}
+.number-input button:focus {
+    outline: none;
+}
+.number-input button:hover {
+    background-color: #555;
+}
